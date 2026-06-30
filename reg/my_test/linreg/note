@@ -1,0 +1,45 @@
+# 1. 查看当前改动状态
+git status
+
+# 2. 添加文件到暂存区
+git add .                    # 添加所有改动文件
+git add 文件名.py             # 添加单个文件
+git add 文件夹名/             # 添加整个文件夹
+
+# 3. 提交并推送
+git commit -m "提交说明"      # 本地提交
+git push origin main          # 推送到远程（main分支）
+
+
+===========================================
+
+
+# 拉取并合并（最常用）
+git pull origin main
+
+# 或者分两步（先获取再合并）
+git fetch origin              # 获取远程更新
+git merge origin/main         # 合并到本地
+
+
+===========================================
+
+# 1. 开始工作前，先拉取最新代码
+git pull origin main
+
+# 2. 写代码...（修改文件）
+
+# 3. 查看改了什么
+git status
+git diff                      # 查看具体改动内容
+
+# 4. 添加改动
+git add .
+
+# 5. 提交
+git commit -m "描述你的改动"
+
+# 6. 推送到 GitHub
+git push origin main
+
+==========================================
